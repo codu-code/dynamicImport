@@ -1,4 +1,5 @@
-document.getElementById("button").addEventListener("click", async () => {
-  const module = await import("./app.js");
-  module.app();
+import { app } from "./app.js";
+
+document.getElementById("button").addEventListener("click", () => {
+    app();
 });
